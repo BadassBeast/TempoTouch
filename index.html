@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tempotouch - Haptic Hand Training Glove</title>
+  <title>HandSync - Haptic Hand Training Glove</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
@@ -219,7 +219,7 @@
   <!-- Header -->
   <header>
     <div class="container">
-      <div class="logo">⚡ Tempotouch</div>
+      <div class="logo">⚡ HandSync</div>
       <nav>
         <a href="#overview">Overview</a>
         <a href="#features">Features</a>
@@ -242,7 +242,7 @@
   <section id="overview">
     <div class="container">
       <h2>Project Overview</h2>
-      <p class="subtitle">Tempotouch combines hardware sensing, haptic feedback, and adaptive training modes to guide hand rehabilitation exercises.</p>
+      <p class="subtitle">HandSync combines hardware sensing, haptic feedback, and adaptive training modes to guide hand rehabilitation exercises.</p>
       <div class="features-grid">
         <div class="feature-card">
           <h3>🖐️ Finger Touch Sensors</h3>
@@ -258,7 +258,7 @@
         </div>
         <div class="feature-card">
           <h3>🖥️ 16×2 LCD Interface</h3>
-          <p>Matrix Rain boot animation, real-time progress display, and mode selection menu with clean centered Tempotouch branding.</p>
+          <p>Matrix Rain boot animation, real-time progress display, and mode selection menu with clean centered HandSync branding.</p>
         </div>
         <div class="feature-card">
           <h3>⚡ Non-Blocking Timers</h3>
@@ -301,15 +301,15 @@
       <p class="subtitle">Full sketch with Matrix Rain boot logo, updated for motor on pin 6 and always-on backlight.</p>
       <div class="code-container">
         <div class="code-header">
-          <span class="filename">tempotouch.ino</span>
+          <span class="filename">HandSync.ino</span>
           <button class="copy-button" onclick="copyCode()">Copy Code</button>
         </div>
         <pre><code class="language-arduino" id="sourceCode">#include &lt;Wire.h&gt;
 #include &lt;LiquidCrystal_I2C.h&gt;
 
 /*
-  Tempotouch - Haptic Hand Training Glove
-  - Boot: scanline → Matrix Rain → progress bar → centered "Tempotouch"
+  HandSync - Haptic Hand Training Glove
+  - Boot: scanline → Matrix Rain → progress bar → centered "HandSync"
   - Distinct stronger haptics per finger
   - Anti-spam per finger (400 ms)
   - Inactivity timing (20 s, 800 ms grace)
@@ -556,7 +556,7 @@ void bootLogo(){
 
   // 3) Centered title (no dots)
   lcd.clear();
-  lcd.setCursor(3,0); lcd.print("Tempotouch");
+  lcd.setCursor(3,0); lcd.print("HandSync");
   if(backlightPWM){
     for(int b=0;b<=255;b+=10){ setBacklight(b); delay(10); }
     delay(420);
@@ -775,7 +775,7 @@ void loop() {
   <section id="demo">
     <div class="container">
       <h2>Demo Video</h2>
-      <p class="subtitle">Watch Tempotouch in action with live Matrix Rain boot, Exercise mode, and Simon Says gameplay.</p>
+      <p class="subtitle">Watch HandSync in action with live Matrix Rain boot, Exercise mode, and Simon Says gameplay.</p>
       <div class="demo-video">
         📹 Demo video Isn't Available, Sorry for the Inconvenience
       </div>
@@ -785,7 +785,7 @@ void loop() {
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; Tempotouch Project. Built with Arduino, passion, and haptic feedback.</p>
+      <p>&copy; HandSync Project. Built with Arduino, passion, and haptic feedback.</p>
       <p style="margin-top: 12px;">Made by <a href="#">Lakshay</a></p>
     </div>
   </footer>
